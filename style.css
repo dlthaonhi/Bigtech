@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+.menu-area {
+    padding: 10px 0px;
+}
+
+#sticky-header {
+    width: 100%;
+    z-index: 9;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.content{
+    display: flex;
+    width: 100%;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.main-menu{
+    display: flex;
+    margin-left: 10px;
+    list-style: none;
+}
+
+.logo img {
+    display: flex;
+    align-items: center;
+    height: 65px;
+}
+
+.navigation{
+    display: flex;
+}
+.navigation>li, .header-action p{
+    margin-right: 40px;
+}
+
+.header-action{
+    display: flex;
+}
+
+.header-action > div {
+}
+
+#header li, .header-action p {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    display: block;
+    line-height: 1;
+    letter-spacing: 1px;
+    
+}
+
+.header-line {
+    background-color: gray;
+    width: 2px;
+    margin-right: 40px;
+}
+
+
+/* --main-banner-- */
+
+#img-bg1 {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+
+    height: 600px;
+}
+
+#img-bg2 {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    /* height: 722px; */
+    z-index: -1;
+}
+
+.content-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.content-main h2 {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0px 50px;
+    line-height: 48px;
+}
+
+#img-tablet {
+    max-width: 600px;
+    position: absolute;
+    bottom: -140px;
+    background-size: cover;
+    z-index: 10;
+}
