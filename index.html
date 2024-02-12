@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
@@ -18,7 +20,7 @@
 <body>
     <div id="preloader"></div>
 
-    <div id="header">
+    <div class="header">
         <div id="sticky-header" class="menu-area menu-style-two">
             <div class="container custom-container-three">
                 <div class="content">
@@ -28,24 +30,45 @@
                         </div>
                         <div class="main-menu">
                             <ul class="navigation">
-                                <li>home</li>
+                                <li>
+                                    home
+                                    <ul>
+                                        <li>home one</li>
+                                        <li>home two</li>
+                                    </ul>
+                                </li>
                                 <li>about us</li>
                                 <li>roadmap</li>
                                 <li>faq</li>
-                                <li>blog</li>
+                                <li>
+                                    blog
+                                    <ul>
+                                        <li>our blog</li>
+                                        <li>blog dedails</li>
+                                    </ul>
+                                </li>
                                 <li>contact us</li>
                             </ul>
                         </div>
                         <div class="header-action">
-                            <div class="header-lang">
-                                <p>eng</p>
-                            </div>
-                            <div class="header-line">
-                                <p></p>
-                            </div>
-                            <div class="header-buy">
-                                <p>buy now</p>
-                            </div>
+                            <ul>
+                                <li class="header-lang">
+                                    <p>eng <i class="fa-solid fa-chevron-down fa-xs" style="color: #00c4f4;"></i> </p>
+                                    <ul id="lang-list">
+                                        <li>ind</li>
+                                        <li>bng</li>
+                                        <li>tur</li>
+                                        <li>cin</li>
+                                    </ul>
+                                </li>
+                                <li id="header-line">
+                                    <p> </p>
+                                </li>
+                                <li id="header-buy">
+                                    <p>buy now</p>
+                                </li>
+                            </ul>
+                            
                         </div>
                     </div>
                 </div>
