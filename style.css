@@ -125,7 +125,7 @@ nav {
 	font-weight: 500;
 	color: #fff;
 	text-transform: uppercase;
-	padding: 9px 15px 9px 25px;
+	padding: 8px 14px 8px 22px;
 	line-height: 1.4;
     display: block;
 
@@ -221,6 +221,7 @@ nav {
 
 .header-buy::before {
     content: '';
+    top: 15px;
     left: 0;
     position: absolute;
     background-color: #464858;
@@ -229,7 +230,8 @@ nav {
     align-items: center;
 }
 
-.buy-now {
+.header-buy .buy-now {
+    display: inline-block;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 600;
@@ -251,3 +253,84 @@ nav {
 	color: #fff;
 }
 
+.mobile-menu {
+    font-weight: 800;
+    display: none;
+}
+
+@media screen and (min-width: 995px) and (max-width: 1024px)
+{
+.header-lang {
+    display: none;
+}
+.logo {
+    flex-basis: 15%;
+}
+
+.menu {
+    flex-basis: 65%;
+    gap: 0;
+}
+.menu > li {
+    margin-left: 30px;
+}
+.header-action {
+    flex-basis: 20%;
+    margin-left: 0;
+}
+.header-action > li {
+    margin-left: 0;
+}
+
+.header-buy .buy-now {
+    margin-left: 30px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 994px)
+{
+.menu {
+    display: none;
+}
+.header-lang {
+    display: none;
+}
+.header-buy::before {
+    display: none;
+}
+.logo {
+    flex-basis: 30%;
+
+}
+
+.header-action {
+    flex-basis: 60%;
+    justify-content: flex-end;
+}
+.mobile-menu {
+    display: block;
+    flex-basis: 10%;
+
+}
+
+}
+
+@media screen and (max-width: 767px)
+{
+.menu {
+    display: none;
+}
+.header-action {
+    display: none;
+}
+
+.logo {
+    flex-basis: 40%;
+}
+
+.mobile-menu {
+    display: block;
+    flex-basis: 20%;
+
+}
+}
