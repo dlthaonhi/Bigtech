@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigTech</title>
+
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -15,104 +17,115 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <title>Document</title>
 </head>
 <body>
-    <div id="preloader"></div>
-
-    <div class="header">
-        <div id="sticky-header" class="menu-area menu-style-two">
-            <div class="container custom-container-three">
-                <div class="content">
-                    <div class="menu">
-                        <div class="logo">
-                            <img src="https://themedox.com/demo/bigtech-live/bigtech/assets/img/logo/logo.png" alt="logo">
-                        </div>
-                        <div class="main-menu">
-                            <ul class="navigation">
-                                <li>
-                                    home
-                                    <ul>
-                                        <li>home one</li>
-                                        <li>home two</li>
-                                    </ul>
-                                </li>
-                                <li>about us</li>
-                                <li>roadmap</li>
-                                <li>faq</li>
-                                <li>
-                                    blog
-                                    <ul>
-                                        <li>our blog</li>
-                                        <li>blog dedails</li>
-                                    </ul>
-                                </li>
-                                <li>contact us</li>
-                            </ul>
-                        </div>
-                        <div class="header-action">
-                            <ul>
-                                <li class="header-lang">
-                                    <p>eng <i class="fa-solid fa-chevron-down fa-xs" style="color: #00c4f4;"></i> </p>
-                                    <ul id="lang-list">
-                                        <li>ind</li>
-                                        <li>bng</li>
-                                        <li>tur</li>
-                                        <li>cin</li>
-                                    </ul>
-                                </li>
-                                <li id="header-line">
-                                    <p> </p>
-                                </li>
-                                <li id="header-buy">
-                                    <p>buy now</p>
-                                </li>
-                            </ul>
-                            
-                        </div>
+    <div id="root">
+        <div class="content-wrapper">
+            <header class="sticky-header">
+                <nav class="navigation">
+                    <div class="logo">
+                        <a href="#"><img src="https://themedox.com/demo/bigtech-live/bigtech/assets/img/logo/logo.png" alt=""></a>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div id="main">
-        <div class="banner-area-two">
-            <div class="container custom-container-four">
-                <img id="img-bg1" src="https://themedox.com/demo/bigtech-live/bigtech/assets/img/banner/banner_bg02.jpg" alt="bg">
-                <div class="content-main">
-                    <h2>World’s Biggest ICO Cryptocurrency Platform for you</h2>
-                    <img id="img-bg2" src="https://themedox.com/demo/bigtech-live/bigtech/assets/img/banner/banner_shape.svg" alt="bg">
-                    <img id="img-tablet" src="https://themedox.com/demo/bigtech-live/bigtech/assets/img/banner/banner_img.png" alt="tablet">
-                </div>
-            </div>
-        </div>
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#" class="set-color">Home</a>
+                            <ul class="menu-list">
+                                <li><a href="#">Home one</a></li>
+                                <li><a href="#" class="set-color">Home two</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="">About us</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="">Roadmap</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="">faq</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="">Blog</a>
+                            <ul class="menu-list">
+                                <li><a href="#">our blog</a></li>
+                                <li><a href="#">blog details</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="">Contact us</a>
+                        </li>
+                    </ul>
 
-        <div id="countdown" class="countdown-area-two"></div>
+                    <ul class="header-action">
+                        <li class="header-lang">
+                            <span class="lang">eng</span>
+                            <ul class="lang-list">
+                                <li><a href="#">ind</a></li>
+                                <li><a href="#">bng</a></li>
+                                <li><a href="#">tur</a></li>
+                                <li><a href="#">cin</a></li>
+                            </ul>
+                        </li>
+                        <p></p>
 
-        <div id="about" class="about-area-two"></div>
+                        <li class="header-buy">
+                            <a href="#" class="buy-now">Buy now</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
-        <div class="choose-area-two"></div>
+            <main>
+                <div class="banner">
+                    banner
+                </div> <!--  End banner -->
 
-        <div class="counter-area"></div>
+                <div class="countdown">
+                    countdown
+                </div> <!--  End countdown -->
 
-        <div id="roadmap" class="roadmap-area-two"></div>
+                <div class="about">
+                    about
+                </div> <!--  End about -->
 
-        <div class="team-area-two"></div>
+                <div class="choose">
+                    choose
+                </div> <!--  End choose -->
 
-        <div class="download-area"></div>
+                <div class="counter">
+                    counter
+                </div> <!--  End counter -->
 
-        <div id="faq" class="faq-area"></div>
+                <div class="roadmap">
+                    roadmap
+                </div> <!--  End roadmap -->
 
-        <div id= "contact" class="contact-area"></div>
+                <div class="team">
+                    team
+                </div> <!--  End team -->
 
-        <div class="newsletter-area"></div>
+                <div class="download">
+                    download
+                </div> <!--  End download -->
 
+                <div class="faq">
+                    faq
+                </div> <!--  End faq -->
 
-    </div>
+                <div class="contact">
+                    contact
+                </div> <!--  End contact -->
 
-    <div id="footer">
-        <div class="footer-area-two"></div>
-    </div>
+                <div class="newsletter">
+                    newsletter
+                </div> <!--  End newsletter -->
+
+            </main>
+
+            <footer>
+                footer
+            </footer>
+        </div> <!--  End content-wrapper -->
+    </div> <!--  End root -->
 </body>
 </html>
