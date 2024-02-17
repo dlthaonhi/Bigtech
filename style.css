@@ -47,6 +47,18 @@ img, .img {
 
 }
 
+.nav-title {
+    color: #564DCA;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    padding: 0;
+    text-decoration: underline;
+    margin-bottom: 18px;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+}
+
 
 /* ---------------
 ------header-----
@@ -457,4 +469,245 @@ nav {
     justify-content: center;
     margin-bottom: 25px;
 
+}
+
+.banner-social {
+    position: absolute;
+	left: 50px;
+	bottom: 200px;
+}
+
+.banner-social ul li {
+	border: 1px solid #F3F3F3;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+    margin-bottom: 25px;
+    width: 42px; 
+    /* width: max-content; */
+}
+
+.banner-social ul li i {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 15px;
+	color: #081A39;
+
+	width: 40px;
+	height: 40px;
+	padding: 0 12px;
+	/* transition: 0s; */
+}
+
+.banner-social ul li span {
+	color: #B5BAC4;
+	font-size: 14px;
+	font-weight: 500;
+
+	padding-right: 14px;
+	display: none;
+}
+
+.banner-scroll {
+    position: absolute;
+	right: 0px;
+	bottom: 220px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-scroll span {
+	font-size: 12px;
+	font-weight: 600;
+    letter-spacing: 0.515em;
+	text-transform: uppercase;
+	color: #081A39;
+    opacity: 0.4;
+
+	transform: rotate(-90deg);
+	margin-bottom: 120px;
+}
+
+
+
+/* ---------------
+------countdown-----
+------------------ */
+
+.countdown {
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+
+
+}
+
+.countdown .main-countdown {
+    background: #FFFFFF;
+    box-shadow: 0px 34px 35px rgba(160, 171, 191, 0.21);
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    padding: 55px 50px 60px;
+
+    
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center;*/
+} 
+
+.main-countdown h2 {
+    letter-spacing: -0.01em;
+    font-size: 26px;
+    margin-bottom: 35px;
+    line-height: 1.88;
+}
+
+.countdown .main-countdown::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 80%;
+    background: #00C4F4;
+    opacity: 0.08;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.main-cd-part {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0;
+    column-gap: 115px;
+    row-gap: 30px;
+}
+
+.cd {
+    display: block;
+    width: 140px;
+    height: 140px;
+
+    border-radius: 100%;
+}
+
+.cd-days {
+    border: 7px solid #00C4F4;
+}
+.cd-hours {
+    border: 7px solid #FF9700;
+}
+.cd-minutes {
+    border: 7px solid #FF1D45;
+}
+.cd-seconds {
+    border: 7px solid #12D176;
+}
+
+.cd-value div {
+    display: block;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 5px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #030B15;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 45px;
+}
+
+.cd-value span {
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    font-family: 'Outfit';
+    color: #030B15;
+    font-weight: 500;
+    line-height: 1;
+}
+
+
+/* ---------------
+------about-----
+------------------ */
+
+.about {
+    padding: 130px 20px;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-about {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px; 
+}
+
+.about-part {
+    flex-basis: 50%;
+    flex: 0 0 auto;
+    max-width: 45%;
+}
+
+.about-img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.about-content {
+    margin-right: 20px;
+}
+
+.about-content h2 {
+    font-size: 42px;
+    max-width: 80%;
+    line-height: 1.26;
+	letter-spacing: -0.01em;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.about-content p {
+    margin: 20px 0;
+    max-width: 70%;
+	color: #727885;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.about-list {
+    margin-bottom: 45px;
+}
+
+.about-list ul li {
+    display: flex;
+    color: #030B15;
+    margin-bottom: 10px;
+    align-items: baseline;
+}
+
+.about-list ul li i {
+    margin-right: 10px;
+    font-weight: 900;
+}
+
+.about-content .button {
+    background-color: #564DCA;
+    padding: 25px 42px;
+    box-shadow: 0px 6px 22px rgba(6, 34, 51, 0.22);
 }
