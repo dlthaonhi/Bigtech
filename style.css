@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-
+    box-sizing: border-box;
 }
 
 .content-wrapper {
@@ -18,8 +18,19 @@ li {
 a {
     text-decoration: none;
 }
+ 
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
 
+p {
+    font-size: 16px;
+}
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit;
+}
 
 img, .img {
 	max-width: 100%;
@@ -133,21 +144,21 @@ nav {
 }
 
 .logo {
-    flex-basis: 16%;
+    flex: 0 0 16%;
     text-align: center;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
 }
 
-.logo img {
+/* .logo img {
     height: 65px;
     width: 110px;
     vertical-align: middle;
-}
+} */
 
 .menu {
-    flex-basis: 50%;
+    flex: 1 0 50%;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -229,7 +240,7 @@ nav {
 
 
 .header-action {
-    flex-basis: 34%;
+    flex: 0 0 34%;
     display: flex;
     justify-content:start;
     align-items: center;
@@ -341,89 +352,6 @@ nav {
     display: none;
 }
 
-@media screen and (min-width: 995px) and (max-width: 1024px)
-{
-.header-lang {
-    display: none;
-}
-.logo {
-    flex-basis: 15%;
-}
-
-.menu {
-    flex-basis: 65%;
-    gap: 0;
-}
-.menu > li {
-    margin-left: 30px;
-}
-.header-action {
-    flex-basis: 20%;
-    margin-left: 0;
-}
-.header-action > li {
-    margin-left: 0;
-}
-
-.header-buy .buy-now {
-    margin-left: 30px;
-}
-}
-
-@media screen and (min-width: 768px) and (max-width: 994px)
-{
-.menu {
-    display: none;
-}
-.header-lang {
-    display: none;
-}
-.header-buy::before {
-    display: none;
-}
-.logo {
-    flex-basis: 30%;
-
-}
-
-.header-action {
-    flex-basis: 60%;
-    justify-content: flex-end;
-}
-.mobile-menu {
-    display: block;
-    flex-basis: 10%;
-    margin-left: 5%;
-
-}
-
-}
-
-@media screen and (max-width: 767px)
-{
-.menu {
-    display: none;
-}
-
-.logo img {
-    max-height: 65px;
-}
-
-.header-action {
-    display: none;
-}
-
-.logo {
-    flex-basis: 40%;
-}
-
-.mobile-menu {
-    display: block;
-    flex-basis: 20%;
-
-}
-}
-
 
 /* ---------------
 ------banner-----
@@ -467,7 +395,7 @@ nav {
 .banner-content {
     margin-left: auto;
     margin-right: auto;
-    flex-basis: 50%;
+    flex-direction: 0 0 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -686,7 +614,7 @@ nav {
 }
 
 .about-part {
-    flex-basis: 50%;
+    flex-direction: 0 0 50%;
     flex: 0 0 auto;
     max-width: 45%;
 }
@@ -774,6 +702,7 @@ nav {
         transform: rotate(360deg);
     }
 }
+
 /* ---------------
 ------choose-----
 ------------------ */
@@ -854,4 +783,119 @@ nav {
     font-weight: 600;
     text-transform: capitalize;
     line-height: 1.2;
+}
+
+.choose-content {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+    align-items: center;
+}
+
+.choose-item {
+    flex: 0 0 auto;
+    width: 25%;
+    margin-bottom: 30px;
+    padding: 0 15px;
+
+}
+
+
+.choose-icon {
+    margin-bottom: 35px;
+}
+
+.choose-icon img {
+    height: 48px;
+}
+
+.choose-item .choose-item-text {
+    width: 78%;
+}
+
+.choose-item-text h2 {
+    font-size: 22px;
+    margin-bottom: 24px;
+    font-weight: 500;
+    text-transform: none;
+    line-height: 1.27;
+    color: #fff
+}
+
+.choose-item-text p {
+    margin-bottom: 0px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #A4B4C3;
+}
+
+/* ---------------
+------counter-----
+------------------ */
+
+.main-counter {
+    position: relative;
+    margin-top: -120px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 34px 35px rgba(160, 171, 191, 0.21);
+    padding: 64px 75px 33px;
+    
+}
+
+.main-counter::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+
+    transform: translateX(-50%);
+    width: 80%;
+    height: 80%;
+    background: #00C4F4;
+    opacity: 0.08;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.counter-part {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.counter-part .counter-item {
+    flex: 0 0 auto;
+    width: 33.333%;
+    padding: 0 15px;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.counter-icon {
+    width: 71px;
+    margin-right: 30px;
+    flex: 0 0 71px;
+}
+
+.counter-text .counter-number {
+    display: flex;
+    align-items: center;
+
+    color: #030B15;
+    letter-spacing: -0.02em;
+    font-size: 48px;
+    line-height: 0.85;
+    margin-bottom: 8px;
+}
+
+.counter-text p {
+    margin-bottom: 0;
+    color: #646580;
+    line-height: 1.6;
 }

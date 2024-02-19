@@ -1,0 +1,128 @@
+/* Extra large devices (large desktops, 1800px and up) */
+@media screen and (min-width: 1800px ) {
+    
+}
+
+/* Extra large devices (large desktops, 1500px and up) */
+@media screen and (max-width: 1799.99px ) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (max-width: 1499.99px ) {
+    /* header */
+    nav {
+        max-width: 1250px;
+        margin-left: 60px;
+    }
+
+    .logo {
+        transform: scale(0.8);
+    }
+
+    /* banner */
+    .banner {
+        padding-top: 180px;
+    }
+
+    .img-banner img {
+        width: 700px;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (max-width: 1199.99px ) 
+{
+    .header-lang {
+        display: none;
+    }
+    .logo {
+        flex-basis: 15%;
+    }
+    
+    .menu {
+        flex-basis: 65%;
+        gap: 0;
+    }
+    .menu > li {
+        margin-left: 30px;
+    }
+    .header-action {
+        flex-basis: 20%;
+        margin-left: 0;
+    }
+    .header-action > li {
+        margin-left: 0;
+    }
+    
+    .header-buy .buy-now {
+        margin-left: 30px;
+    }
+
+    .banner-social, .banner-scroll {
+        display: none;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 991.99px ) {
+    .menu {
+        display: none;
+    }
+    .header-lang {
+        display: none;
+    }
+    .header-buy::before {
+        display: none;
+    }
+    .logo {
+        flex-basis: 30%;
+    
+    }
+    
+    nav {
+        margin-right: 100px;
+    }
+    .header-action {
+        flex-basis: 60%;
+        justify-content: flex-end;
+    }
+    .mobile-menu {
+        display: block;
+        flex-basis: 10%;
+        margin-left: 5%;
+    
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 767.99px) {
+    .menu {
+        display: none;
+    }
+    
+    .logo img {
+        max-height: 65px;
+    }
+    
+    .header-action {
+        display: none;
+    }
+    
+    .logo {
+        flex-basis: 40%;
+    }
+    
+    .mobile-menu {
+        display: block;
+        flex-basis: 20%;
+    
+    }
+}
+
+/* Small devices (landscape phones, 576px and down) */
+@media screen and (max-width: 575.99px) {
+}
+
+
