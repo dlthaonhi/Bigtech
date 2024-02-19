@@ -22,6 +22,8 @@ a {
 h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    font-size: 42px;
+    letter-spacing: -0.01em;
 }
 
 p {
@@ -135,7 +137,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 1520px;
+    max-width: 1220px;
     flex-grow: 1;
 
     position: relative;
@@ -331,8 +333,7 @@ nav {
 
 .header-buy .buy-now {
 
-    /* padding: 20px 45px; */
-    padding: 16px 35px;
+    padding: 20px 45px; 
     background: #00C4F4;
 	border-radius: 5px;
     margin-left: 60px;
@@ -409,9 +410,7 @@ nav {
 
 .banner-content > h2 {
     color: #fff;
-    font-family: 'Poppins', sans-serif;
     font-size: 55px;    
-    font-weight: 600;
 	line-height: 1.4;
 	letter-spacing: -0.01em;
 
@@ -449,6 +448,7 @@ nav {
 	justify-content: center;
 	font-size: 15px;
 	color: #081A39;
+    cursor: pointer;
 
 	width: 40px;
 	height: 40px;
@@ -577,7 +577,7 @@ nav {
     font-weight: 600;
     color: #030B15;
     font-family: 'Poppins', sans-serif;
-    margin-top: 45px;
+    margin-top: 40px;
 }
 
 .cd-value span {
@@ -635,7 +635,6 @@ nav {
     max-width: 90%;
     line-height: 1.26;
 	letter-spacing: -0.01em;
-    font-weight: 600;
     text-transform: capitalize;
 }
 
@@ -868,8 +867,8 @@ nav {
 }
 
 .counter-part .counter-item {
-    flex: 0 0 auto;
-    width: 33.333%;
+    flex: 0 0 33.33%;
+    /* width: 33.333%; */
     padding: 0 15px;
 
     display: flex;
@@ -899,3 +898,63 @@ nav {
     color: #646580;
     line-height: 1.6;
 }
+/* 
+.roadmap {
+    padding-top: 130px;
+    padding-bottom: 100px;
+}
+
+.main-roadmap {
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.roadmap-text {
+    
+    margin-bottom: 65px;
+    text-align: center;
+    width: 480px;
+    font-size: 45px;
+    color:#030B15;
+    line-height: 1.26;
+}
+
+.roadmap-map {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
+}
+
+.roadmap-part {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 50px;
+    
+}
+.roadmap-part::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);
+    opacity: 0.1;
+    width: 100px;
+    display: block;
+}
+
+.roadmap-item {
+    width: 345px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 345px;
+} */
