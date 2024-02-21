@@ -1,10 +1,49 @@
 /* Extra large devices (large desktops, 1800px and up) */
 @media screen and (min-width: 1800px ) {
+    .max-width {
+        max-width: 1550px;
+    }
+   
+        /* -----header----- */
+ 
     nav {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
+
+    .menu {
+        gap: 60px;
+    }
+
+    .header-action {
+        margin-left: 0px;
+    }
+
+    
+        /* -----banner----- */
+
+    .banner-bg {
+        height: 800px;
+    }
+    .banner-content {
+        max-width: 1200px;
+    }
+
+    .banner-content > h2 {
+        margin-bottom: 65px;
+    }
+
+    .banner-social {
+        bottom: 100px;
+        left: 100px;
+    }
+
+    .banner-scroll {
+        bottom: 120px;
+        right: 40px;
+    }
+
 }
 
 /* Extra large devices (large desktops, 1500px and up) */
@@ -221,31 +260,113 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media screen and (max-width: 767.99px) {
+    .max-width {
+        max-width: 540px;
+    }
+
+        /* -----header----- */
+  
+    
     .menu {
         display: none;
-    }
-    
-    .logo img {
-        max-height: 65px;
     }
     
     .header-action {
         display: none;
     }
-    
-    .logo {
-        flex-basis: 40%;
-    }
-    
+  
     .mobile-menu {
         display: block;
-        flex-basis: 20%;
     
+    }
+
+    
+        /* -----banner----- */
+    .banner {
+        padding-top: 100px;
+    }
+
+    .banner-bg {
+        height: 500px;
+    }
+    .banner-bg::before {
+        top: 300px ;
+        height: 280px;
+        }
+    
+    .banner-content {
+        max-width: 530px;
+        margin-top: 40px;
+    }
+    
+    .banner-content > h2 {
+        margin-bottom: 40px;
+        font-size: 54px;
+        letter-spacing: -0.45px;
+        line-height: 1.25;
+    }
+
+    .banner-content h2 {
+        margin-bottom: 40px;
+        font-size: 40px;
+        letter-spacing: -0.45px;
+    }
+
+    .img-banner img {
+        width: 510px;
+    }
+    
+        /* -----countdown----- */
+
+    .countdown {
+        max-width: 540px;
+    }
+            
+    .cd {
+        width: 110px;
+        height: 110px;
+    }
+    
+    
+    .cd-days {
+        border: 5px solid #00C4F4;
+    }
+    .cd-hours {
+        border: 5px solid #FF9700;
+    }
+    .cd-minutes {
+        border: 5px solid #FF1D45;
+    }
+    .cd-seconds {
+        border: 5px solid #12D176;
+    }
+    
+    .cd-value div{
+        margin-top: 25px;
     }
 }
 
 /* Small devices (landscape phones, 576px and down) */
 @media screen and (max-width: 575.99px) {
+    .max-width {
+        max-width: 540px;
+    }
+
+        /* -----header----- */
+  
+    
+    .menu {
+        display: none;
+    }
+    
+    .header-action {
+        display: none;
+    }
+  
+    .mobile-menu {
+        display: block;
+    
+    }
 }
 
 
