@@ -48,11 +48,50 @@
 
 /* Extra large devices (large desktops, 1500px and up) */
 @media screen and (max-width: 1799.99px ) {
+    .max-width {
+        max-width: 1550px;
+    }
+   
+        /* -----header----- */
+ 
     nav {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
+
+    .menu {
+        gap: 60px;
+    }
+
+    .header-action {
+        margin-left: 0px;
+    }
+
+    
+        /* -----banner----- */
+
+    .banner-bg {
+        height: 800px;
+    }
+    .banner-content {
+        max-width: 1200px;
+    }
+
+    .banner-content > h2 {
+        margin-bottom: 65px;
+    }
+
+    .banner-social {
+        bottom: 100px;
+        left: 100px;
+    }
+
+    .banner-scroll {
+        bottom: 120px;
+        right: 40px;
+    }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -64,10 +103,19 @@
         /* -----header----- */
 
     header {
-        padding: 15px 0;
+        padding: 14px 0;
+        font-size: 14px;
     }
-    nav {
+    /* nav {
         margin-left: 60px;
+    } */
+
+    .menu {
+        gap: 40px;
+    }
+
+    .header-action {
+        padding-left: 30px;
     }
 
     .header-action li {
@@ -86,8 +134,12 @@
 
         /* -----banner----- */
 
-    .banner {
+    #banner {
         padding-top: 180px;
+    }
+
+    .banner-bg {
+        height: 680px;
     }
 
     .banner-bg::before {
@@ -107,7 +159,21 @@
         bottom: 110px;
     }
 
+    
+        /* -----about----- */
 
+    .about-content h2 {
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: -0.4px;
+        line-height: 1.26;
+    }
+
+    .about-content .button {
+        width: 250px;
+        font-size: 13px;
+        padding: 20px 35px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -180,13 +246,28 @@
 
             /* -----countdown----- */
 
-    .countdown {
+    #countdown {
         max-width: 940px;
     }
 
     .main-cd-part {
         column-gap: 70px;
     }
+
+        /* -----about----- */
+
+    .main-about {
+        max-width: 940px;
+        /* gap: 30px; */
+    }
+    .about-img img {
+        max-width: 95%;
+    }
+
+    .about-content h2 {
+        font-size: 35px;
+    }
+
 }
 
 
@@ -247,12 +328,45 @@
 
         /* -----countdown----- */
 
-    .countdown {
+    #countdown {
         max-width: 700px;
     }
         
     .main-cd-part {
         column-gap: 30px;
+    }
+
+        /* -----about----- */
+    
+    .main-about {
+        flex-direction: column;
+        max-width: 720px;
+    }
+
+    .about-img img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-content h2 {
+        font-size: 40px;
+    }
+
+    .about-content p {
+        max-width: 90%;
+    }
+
+    .sticker-about img.sticker1 {
+        display: none;
+    }
+
+    .sticker-about img.sticker2 {
+        right: 0px;
+        bottom: 70px;
     }
 
 
@@ -282,7 +396,7 @@
 
     
         /* -----banner----- */
-    .banner {
+    #banner {
         padding-top: 100px;
     }
 
@@ -318,7 +432,7 @@
     
         /* -----countdown----- */
 
-    .countdown {
+    #countdown {
         max-width: 540px;
     }
             
@@ -344,6 +458,27 @@
     .cd-value div{
         margin-top: 25px;
     }
+    
+        /* -----about----- */
+    
+    .about-content h2 {
+        font-size: 35px;
+    }
+
+    .about-content p {
+        max-width: 95%;
+    }
+
+    .about-content .button {
+        width: 230px;
+        font-size: 13px;
+        padding: 18px 28px;
+    }
+
+    .sticker-about img.sticker2 {
+        bottom: 60px;
+    }
+
 }
 
 /* Small devices (landscape phones, 576px and down) */
@@ -365,8 +500,55 @@
   
     .mobile-menu {
         display: block;
-    
+        flex-basis: 8%; 
     }
+    
+        /* -----banner----- */
+    
+    .banner-bg {
+        height: 470px;
+    }
+
+    .banner-bg::before {
+        top: 250px;
+        height: 260px;
+    }
+    .banner-content {
+        max-width: 530px;
+        margin-top: 40px;
+    }
+    .banner-content > h2 {
+        margin-bottom: 40px;
+        font-size: 32px;
+        letter-spacing: -0.45px;
+    }
+
+    .img-banner img {
+        width: 90vw;
+    }
+
+        
+        /* -----about----- */
+    
+    .about-content h2 {
+        font-size: 28px;
+        max-width: 100%;
+    }
+    
+    .about-content p {
+        max-width: 100%;
+    }
+    
+    .about-content .button {
+        width: 230px;
+        font-size: 13px;
+        padding: 16px 18px;
+    }
+    .sticker-about img.sticker2 {
+        right: 60px;
+        bottom: 40px;
+    }
+
 }
 
 

@@ -116,14 +116,9 @@ header {
     z-index: 9;
 
     padding: 30px 0;
-    margin: 0 auto;
 
     width: 100%;
     height: auto;
-}
-
-.main-header {
-    width: 100%;
 }
 
 #sticky__header{
@@ -135,6 +130,13 @@ header {
     align-items: center;
     width: 100%;
 }
+
+.main-header {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
 
 nav {
     display: flex;
@@ -363,7 +365,7 @@ nav {
 ------------------ */
 
 
-.banner {
+#banner {
 	position: relative;
 	padding-top: 225px;
 	z-index: 1; 
@@ -389,11 +391,11 @@ nav {
 
 	position: absolute;
 	left: 0;
-    top: 80px;
+    top: 100px;
 
 
 	width: 100%;
-	height: 772px;
+	height: 722px;
 	z-index: 0;
 } 
 
@@ -497,17 +499,15 @@ nav {
 ------countdown-----
 ------------------ */
 
-.countdown {
+#countdown {
     width: 100%;
     max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 15px;
-
-
 }
 
-.countdown .main-countdown {
+#countdown .main-countdown {
     background: #FFFFFF;
     box-shadow: 0px 34px 35px rgba(160, 171, 191, 0.21);
     border-radius: 20px;
@@ -521,14 +521,7 @@ nav {
     align-items: center;*/
 } 
 
-.main-countdown h2 {
-    letter-spacing: -0.01em;
-    font-size: 26px;
-    margin-bottom: 35px;
-    line-height: 1.88;
-}
-
-.countdown .main-countdown::before {
+#countdown .main-countdown::before {
     content: "";
     position: absolute;
     bottom: -10px;
@@ -540,6 +533,13 @@ nav {
     opacity: 0.08;
     border-radius: 20px;
     z-index: -1;
+}
+
+.main-countdown h2 {
+    letter-spacing: -0.01em;
+    font-size: 26px;
+    margin-bottom: 35px;
+    line-height: 1.88;
 }
 
 .main-cd-part {
@@ -598,39 +598,51 @@ nav {
 ------about-----
 ------------------ */
 
-.about {
-    padding: 130px 20px;
-    position: relative;
+#about {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.about-area {
+    padding: 130px 0px;
+}
+
+.main-about {
+    /* 
+    justify-content: flex-end;
+    padding: 0 20px;  */
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 40px;
+    padding: 0 20px; */
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.main-about {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 40px; 
-}
-
 .about-part {
-    flex-direction: 0 0 50%;
-    flex: 0 0 auto;
-    max-width: 45%;
+    /* flex-direction: 0 0 50%; */
+    flex: 0 0 50%;
+    padding: 0 15px;
+    /* max-width: 45%; */
 }
 
 .about-img {
-    display: flex;
+    /* display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: center; */
+    text-align: center;
 }
 
-.about-content {
+/* .about-content {
     margin-right: 20px;
-}
+} */
 
 .about-content h2 {
     font-family: 'Poppins', sans-serif;
@@ -643,7 +655,7 @@ nav {
 
 .about-content p {
     margin: 20px 0;
-    max-width: 70%;
+    max-width: 85%;
 	color: #727885;
     font-size: 16px;
     line-height: 1.75;
@@ -669,6 +681,12 @@ nav {
     background-color: #564DCA;
     padding: 25px 42px;
     box-shadow: 0px 6px 22px rgba(6, 34, 51, 0.22);
+
+    transition: background-color 0.3s;
+
+}
+.about-content .button:hover {
+    background-color: #00C4F4;
 }
 
 .sticker-about img {
@@ -676,7 +694,7 @@ nav {
 }
 
 .sticker-about img.sticker1 {
-    left: 9%;
+    left: 80px;
 	bottom: 90px;
 	animation: left-right 5s infinite linear;
 }
@@ -684,7 +702,7 @@ nav {
 @keyframes left-right {
     0%{
         position: absolute;
-        left: 9%;
+        left: 80px;
 	    bottom: 90px;
     }
     50%{
@@ -693,7 +711,7 @@ nav {
 }
 
 .sticker-about img.sticker2 {
-    right: 7%;
+    right: 80px;
 	bottom: 22%;
     animation: item-rolate 10s infinite linear;
 }
@@ -835,6 +853,14 @@ nav {
 ------counter-----
 ------------------ */
 
+#counter {
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+}
+
 .main-counter {
     position: relative;
     margin-top: -120px;
@@ -902,7 +928,7 @@ nav {
     line-height: 1.6;
 }
 /* 
-.roadmap {
+#roadmap {
     padding-top: 130px;
     padding-bottom: 100px;
 }
