@@ -44,6 +44,14 @@
         right: 40px;
     }
 
+        /* -----roadmap----- */
+
+    .main-roadmap {
+        max-width: 1700px;
+    }
+    .roadmap-item {
+        flex: 0 0 22%;
+    }
 }
 
 /* Extra large devices (large desktops, 1500px and up) */
@@ -98,6 +106,9 @@
 @media screen and (max-width: 1499.99px ) {
     .max-width {
         max-width: 1250px;
+    }
+    .max-width-main {
+        max-width: 1200px;
     }
 
         /* -----header----- */
@@ -174,6 +185,16 @@
         font-size: 13px;
         padding: 20px 35px;
     }
+
+        /* -----roadmap----- */
+
+    .roadmap-map {
+        padding: 0;
+    }
+
+    .roadmap-text h2{
+        font-size: 40px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -202,7 +223,7 @@
     
     .menu {
         justify-content: flex-start;
-        flex-basis: 67%;
+        /* flex-basis: 67%; */
         gap: 0;
     }
     .menu > li {
@@ -250,19 +271,12 @@
 
         /* -----countdown----- */
 
-    /* #countdown {
-        max-width: 940px;
-    } */
 
     .main-cd-part {
         column-gap: 70px;
     }
 
         /* -----about----- */
-
-    /* .main-about {
-        max-width: 940px;
-    } */
 
     .about-img img {
         max-width: 95%;
@@ -290,6 +304,22 @@
     .counter-text .counter-number {
         font-size: 40px;
     }
+
+        /* -----roadmap----- */
+
+    .roadmap-text {
+        width: 43%;
+    }
+    .roadmap-text h2{
+        font-size: 36px;
+    }
+
+        /* -----team----- */
+
+    .team-text h2, .team-text p {
+        font-size: 34px;
+    }
+    
 
 
 }
@@ -415,6 +445,70 @@
 
     .main-counter {
         padding: 50px 45px 20px;
+    }
+
+        /* -----roadmap----- */
+
+    .main-roadmap {
+        max-width: 720px;
+    }
+    .roadmap-text {
+        width: 60%;
+    }
+
+    .roadmap-text h2{
+        font-size: 40px;
+    }
+    .roadmap-part::before,
+    .roadmap-content::before,
+    .roadmap-content .dot {
+        display: none;
+    }
+
+    .roadmap-part {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+
+    .roadmap-item,
+    .roadmap-part .roadmap-item:nth-child(3),
+    .roadmap-part .roadmap-item:nth-child(4) {
+        flex-direction:row;
+        flex: 0 0 50%;
+        flex-wrap: wrap;
+        padding-left: 30px;
+        padding-bottom: 40px;
+    }
+    .roadmap-part .roadmap-item:nth-child(odd) {
+        padding-left: 0;
+        padding-right: 10px;
+    }
+
+    .roadmap-title {
+        margin-bottom: 10px;
+    }
+    .roadmap-content {
+        margin-left: 0;
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+        /* -----team----- */
+
+    .team-text h2, .team-text p {
+        font-size: 40px;
+    }
+    .team-img{
+        margin-bottom: 20px;
+    }
+    .team-item {
+        flex: 0 0 33.33%;
+        margin-bottom: 45px;
+    }
+
+    .team-img-text h2 {
+        margin-bottom: 8px;
+        font-size: 19px;
     }
 
 }
@@ -556,6 +650,28 @@
         font-size: 34px;
     }
 
+        /* -----roadmap----- */
+
+    .roadmap-text {
+        width: 90%;
+    }
+
+    .roadmap-text h2{
+        font-size: 36px;
+    }
+
+        /* -----team----- */
+
+    .team-text h2, .team-text p {
+        font-size: 36px;
+    }
+    .team-text br {
+        display: none;
+    }
+    .team-item {
+        flex: 0 0 50%
+    }
+
 }
 
 /* Small devices (landscape phones, 576px and down) */
@@ -644,6 +760,36 @@
 
     .counter-part .counter-item {
         flex: 0 0 100%;
+    }
+    
+        /* -----roadmap----- */
+
+    .roadmap-text {
+        width: 90%;
+    }
+
+    .roadmap-text h2{
+        font-size: 28px;
+    }
+
+    .roadmap-item,
+    .roadmap-part .roadmap-item:nth-child(3),
+    .roadmap-part .roadmap-item:nth-child(4) {
+        flex: 0 0 100%;
+        padding-left: 0;
+    }
+    .roadmap-part .roadmap-item:nth-child(4) .roadmap-content p{
+        max-width: 100%;
+    }
+
+        /* -----team----- */
+
+    .team-text h2, .team-text p {
+        font-size: 28px;
+    }
+
+    .team-item {
+        flex: 0 0 100%
     }
 
 }
