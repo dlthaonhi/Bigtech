@@ -169,15 +169,12 @@
     .banner-scroll {
         bottom: 110px;
     }
-
     
         /* -----about----- */
 
     .about-content h2 {
         font-size: 38px;
-        font-weight: 600;
         letter-spacing: -0.4px;
-        line-height: 1.26;
     }
 
     .about-content .button {
@@ -193,6 +190,12 @@
     }
 
     .roadmap-text h2{
+        font-size: 40px;
+    }
+   
+        /* -----download----- */
+
+    .download-content h2 {
         font-size: 40px;
     }
 }
@@ -320,7 +323,17 @@
         font-size: 34px;
     }
     
+        /* -----download----- */
 
+    #download {
+        padding: 130px 0;
+    }
+    .download-img, .download-content {
+        flex: 0 0 50%;
+    }
+    .download-content h2 {
+        font-size: 36px;
+    }
 
 }
 
@@ -510,6 +523,21 @@
         margin-bottom: 8px;
         font-size: 19px;
     }
+   
+        /* -----download----- */
+
+    .download-img, .download-content {
+        flex: 0 0 100%;
+        padding: 0;
+    }
+    .download-content {
+        order: 2;
+        margin-top: 50px;
+    }
+    .download-content h2 {
+        font-size: 40px;
+    }
+
 
 }
 
@@ -671,6 +699,17 @@
     .team-item {
         flex: 0 0 50%
     }
+   
+        /* -----download----- */
+
+    #download {
+        padding: 120px 0;
+    }
+
+    .download-content h2 {
+        font-size: 36px;
+    }
+
 
 }
 
@@ -790,6 +829,12 @@
 
     .team-item {
         flex: 0 0 100%
+    }
+   
+        /* -----download----- */
+
+    .download-content h2 {
+        font-size: 28px;
     }
 
 }

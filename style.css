@@ -1214,3 +1214,62 @@ nav {
 .team-bg.choose-bg {
     padding: 130px 0 100px;
 }
+
+/* ---------------
+------download-----
+------------------ */
+
+#download {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    padding-bottom: 140px;
+}
+
+.main-download {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 15px;
+  
+}
+
+.download-img {
+    flex: 0 0 57%;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.download-content {
+    flex: 0 0 43%;
+    padding: 0 15px;
+}
+
+.download-content h2 {
+    font-size: 45px;
+    line-height: 1.26;
+	letter-spacing: -0.01em;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.download-content p {
+    /* max-width: 85%; */
+	color: #727885;
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 30px;
+}
+
+.download-button {
+    display: flex;
+    align-items: center;
+}
+
+.download-button a {
+    margin-right: 20px;
+    margin-top: 10px;
+}
