@@ -714,9 +714,7 @@ nav {
 
 @keyframes left-right {
     0%{
-        position: absolute;
-        left: 80px;
-	    bottom: 90px;
+
     }
     50%{
         transform: translate(50px);
@@ -1283,10 +1281,12 @@ nav {
     background: #F3F6FC;
 }
 
+.faq-bg {
+    width: 80%;
+    margin: 0 auto;
+}
 .faq-bg img {
-    /* left: 50%;
-    transform: translateX(-50%);
-    bottom: 5%; */
+    bottom: 5%;
     position: absolute;
     z-index: -1;
 } 
@@ -1305,6 +1305,7 @@ nav {
     font-size: 45px;
     color: #030B15;
     line-height: 1.26;
+    text-transform: capitalize;
 }
 
 .faq-part {
@@ -1359,7 +1360,7 @@ nav {
     transform-origin: top center; 
     background-color: #fff;
     display: none;
-    transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: all 1s linear;
 
 }
 .answer::after {
@@ -1388,9 +1389,14 @@ nav {
     border-radius: 0;
 }
 
+.sticker-about.sticker-faq img {
+    width: 80px;
+    z-index: -1;
+}
 
-#faq .sticker-about img.sticker2 {
-    top: 22%
+.sticker-about.sticker-faq img.sticker2 {
+    top: 15%;
+    right: 6%;
 }
 
 
@@ -1403,13 +1409,14 @@ nav {
 }
 
 .main-contact {
-    padding: 0 55px;
+    padding: 0 40px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .contact-part {
     flex: 0 0 50%;
+    padding: 0 15px;
     display: flex;
     flex-direction: column;
 }
@@ -1493,10 +1500,11 @@ nav {
     outline: none;
 
 }
-.contact-item ::placeholder{
+.contact-part ::placeholder{
     font-size: 20px;
+    opacity: 0.5;
     font-weight: 450;
-    color: #6E7C8F;
+    color: #b7c7da;
 }
 .form-item:focus::placeholder {
     color: transparent;
@@ -1510,6 +1518,9 @@ nav {
 ------newsletter-----
 ------------------ */
 
+#newsletter {
+    padding: 0 15px;
+}
 .main-news {
     position: relative;
     margin-top: -120px;
@@ -1529,6 +1540,7 @@ nav {
     line-height: 1.5;
     margin-bottom: 0;
     letter-spacing: -1px;
+    text-transform: capitalize;
 }
 
 .main-news form {
@@ -1586,7 +1598,7 @@ nav {
 .footer-top {
     display: flex;
     flex-wrap: wrap;
-    padding: 70px 40px 65px;
+    padding: 70px 25px 65px;
 }
 
 .footer-menu {
@@ -1607,13 +1619,13 @@ nav {
 
 .footer-menu li {
     margin-right: 60px;
-
 }
 
 .footer-text {
     color: #030B15;
     font-weight: 500;
     font-size: 16px;
+    line-height: 1.75;
 }
 
 .footer-social ul {
@@ -1623,7 +1635,13 @@ nav {
 }
 
 .footer-social li {
-    margin-right: 40px;
+    margin-left: 40px;
+}
+.footer-menu ul li:nth-child(4){
+    margin-right: 0;
+}
+.footer-social ul li:nth-child(1){
+    margin-left: 0;
 }
 
 .footer-social li a {
@@ -1634,7 +1652,7 @@ nav {
 
 .footer-bottom {
     border-top: 1px solid #F0F3F9;
-    padding: 40px 40px;
+    padding: 40px 25px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1654,6 +1672,10 @@ nav {
 }
 
 .footer-bottom .footer-text {
+    font-size: 15px;
+}
+
+.footer-scroll p {
     font-size: 14px;
 }
 
@@ -1676,7 +1698,7 @@ nav {
     align-items: center;
 }
 .footer-more li {
-    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .footer-top li:hover a,

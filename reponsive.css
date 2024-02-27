@@ -198,6 +198,37 @@
     .download-content h2 {
         font-size: 40px;
     }
+    
+        /* -----faq----- */
+
+    .sticker-about.sticker-faq img.sticker2 {
+        top: 8%;
+        right: 4%;
+    }
+    .sticker-about.sticker-faq img.sticker1 {
+        left: 3%;
+        bottom: 4%;
+    }
+    .faq-content h2 {
+        font-size: 40px;
+    }
+    
+        /* -----contact----- */
+    
+    .contact-part h2 {
+        font-size: 45px;
+    }
+
+    .contact-part .button {
+        font-size: 13px;
+    }
+   
+        /* -----newsletter----- */
+    
+    .main-news button {
+        font-size: 13px;
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -334,7 +365,49 @@
     .download-content h2 {
         font-size: 36px;
     }
+       
+        /* -----faq----- */
+        
+    .faq-content h2 {
+        font-size: 36px;
+    }
+   
+        /* -----contact----- */
+    
+    .main-contact {
+        padding: 0;
+    }
+    .contact-item {
+        width: 85%;
+    }
+    .contact-part h2 {
+        font-size: 45px;
+    }
 
+    .contact-part .button {
+        font-size: 13px;
+    }
+   
+        /* -----newsletter----- */
+    
+    .main-news {
+        padding: 50px 30px;
+    }
+    .main-news h2 {
+        font-size: 28px;
+    }
+    .main-news button {
+        font-size: 13px;
+    }
+   
+        /* -----footer----- */
+        
+    .footer-top {
+        padding: 70px 15px 65px;
+    }
+    .footer-bottom {
+        padding: 40px 15px;
+    }
 }
 
 
@@ -537,7 +610,76 @@
     .download-content h2 {
         font-size: 40px;
     }
+       
+        /* -----faq----- */
+        
+    .faq-content h2 {
+        font-size: 40px;
+    }
 
+    .faq-item .question {
+        font-size: 22px;
+        padding: 37px 50px 37px 30px;
+    }
+   
+        /* -----contact----- */
+    
+    .contact-part {
+        flex: 0 0 100%;
+    }
+    .contact-part.part-top {
+        margin-bottom: 70px;
+    }
+    .contact-item {
+        width: 100%;
+    }
+    .contact-part h2 {
+        font-size: 38px;
+    }
+   
+        /* -----newsletter----- */
+    
+    .main-news {
+        padding: 45px 30px;
+        display: block;
+    }
+
+    .main-news h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+        /* -----footer----- */
+        
+    .footer-top {
+        padding: 55px 0 50px;
+    }
+    .footer-menu, .footer-social {
+        padding: 0;
+    }
+    .footer-menu li {
+        margin-right: 40px;
+    }
+    .footer-menu ul li:nth-child(4){
+        margin-right: 0;
+    }
+    .footer-social ul li:nth-child(1){
+        margin-left: 0;
+    }
+    .footer-bottom {
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .footer-scroll {
+        display: none;
+    }
+    .footer-more ul {
+        justify-content: center;
+    }
+    .footer-more ul li:nth-child(1){
+        margin-left: 0;
+    }
 
 }
 
@@ -709,6 +851,75 @@
     .download-content h2 {
         font-size: 36px;
     }
+      
+        /* -----faq----- */
+        
+    #faq {
+        padding: 115px 0 120px;
+    }
+    .sticker-about.sticker-faq, .faq-bg {
+        display: none;
+    }
+    .faq-part {
+        padding: 0;
+    }
+    .faq-content h2 {
+        font-size: 36px;
+    }
+    .faq-item .question {
+        font-size: 18px;
+        padding: 25px 30px 25px 25px;
+    }
+   
+        /* -----contact----- */
+    
+    .contact-part h2 {
+        font-size: 32px;
+    }
+    .contact-item {
+        padding: 22px 30px;
+    }
+    .contact-part h3 {
+        font-size:26px ;
+        line-height: 1.2;
+    }
+    .contact-part .button {
+        padding: 20px 25px;
+    }
+   
+        /* -----newsletter----- */
+    
+    .main-news {
+        padding: 30px 35px;
+        text-align: center;
+    }
+
+    .main-news h2 {
+        font-size: 24px;
+    }
+    .main-news input {
+        padding: 26px 20px 26px 20px;
+    }
+    .main-news .button {
+        position: static;
+        margin-top: 20px;
+    }
+
+        /* -----footer----- */
+        
+    .footer-top {
+        padding: 40px 0 30px;
+        justify-content: center;
+    }
+    .footer-menu ul,.footer-social ul {
+        justify-content: center;
+    }
+    .footer-social {
+        margin-top:20px ;
+    }
+    .footer-menu li {
+        margin-right: 20px;
+    }
 
 
 }
@@ -836,6 +1047,36 @@
     .download-content h2 {
         font-size: 28px;
     }
+     
+        /* -----faq----- */
+    
+    .faq-content h2 {
+        font-size: 28px;
+    }
+   
+        /* -----contact----- */
+    
+    .contact-item {
+        padding: 22px 20px;
+    }
+    .contact-part h3 {
+        font-size:22px ;
+    }
+    .contact-part .button {
+        padding: 20px 25px;
+    }
+   
+        /* -----newsletter----- */
+    
+    .main-news {
+        padding: 30px 25px;
+    }
+
+        /* -----footer----- */
+        
+
+
+
 
 }
 
