@@ -1,0 +1,104 @@
+@keyframes preloading {
+    0%{
+        
+    }
+    100%{
+        display: none;
+    }
+}
+
+@keyframes rect-scale {
+    0% {
+
+    }
+    20% {
+        transform: scaleY(1);
+    }
+    40% {
+        transform: scaleY(0.4);
+    }
+}
+
+@keyframes header {
+    0% {
+        visibility: visible;
+        opacity: 0;
+        transform: translateY(-20px);
+        background-color: transparent;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        visibility: visible;
+        transform: translateY(0);
+        background-color: #030B15;
+        z-index: 999;
+    }
+}
+
+@keyframes slip-down {
+    0% {
+        visibility: visible;
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slip-left {
+    0% {
+        visibility: visible;
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slip-right {
+    0% {
+        visibility: visible;
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slip-up {
+    0% {
+        visibility: visible;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes left-right {
+    0%{
+
+    }
+    50%{
+        transform: translate(50px);
+    }
+}
+
+@keyframes item-rolate {
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}

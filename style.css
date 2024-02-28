@@ -129,25 +129,75 @@ img, .img {
 }
 
 /* ---------------
+------preloading-----
+------------------ */
+
+.preloading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background: #030B15;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    animation: preloading 2.5s forwards;
+    /* display: none; */
+}
+
+.main-preloading {
+    margin: 100px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.main-preloading > div {
+    background-color: #00c2f2;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    transform: scaleY(0.4);
+    animation: rect-scale 1.2s infinite ease-in-out;
+}
+
+.main-preloading .rect2 {
+    animation-delay: 0.1s;
+}
+.main-preloading .rect3 {
+    animation-delay: 0.2s;
+}
+.main-preloading .rect4 {
+    animation-delay: 0.3s;
+}
+.main-preloading .rect5 {
+    animation-delay: 0.4s;
+}
+
+/* ---------------
 ------header-----
 ------------------ */
 
-header {
+#header {
     position: absolute;
     left: 0;
 	top: 0;
     z-index: 9;
-
     padding: 30px 0;
-
     width: 100%;
     height: auto;
+    
+    
 }
 
-#sticky__header{
-    /* position: fixed;
+#sticky-header{
+    position: fixed;
     top: 0;
-    left: 0; */
+    left: 0; 
+    visibility: hidden;
+    animation: header 3s 3s forwards;
+    animation-fill-mode: forwards;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -442,7 +492,8 @@ nav {
     font-size: 55px;    
 	line-height: 1.4;
     margin-bottom: 45px;
-
+    visibility: hidden;
+    animation: slip-down 2s ease-in-out 2s forwards;
  
 }
 
@@ -646,6 +697,15 @@ nav {
     padding: 0 15px;
     /* max-width: 45%; */
 }
+.about-img.about-part {
+    visibility: hidden;
+    animation: slip-left 2s ease-in-out 8s forwards;
+}
+
+.about-content.about-part {
+    visibility: hidden;
+    animation: slip-right 2s ease-in-out 8s forwards;
+}
 
 .about-img {
     /* display: flex;
@@ -712,27 +772,12 @@ nav {
 	animation: left-right 5s infinite linear;
 }
 
-@keyframes left-right {
-    0%{
-
-    }
-    50%{
-        transform: translate(50px);
-    }
-}
-
 .sticker-about img.sticker2 {
     right: 80px;
 	bottom: 22%;
     animation: item-rolate 10s infinite linear;
 }
 
-@keyframes item-rolate {
-    
-    100%{
-        transform: rotate(360deg);
-    }
-}
 
 /* ---------------
 ------choose-----
@@ -810,7 +855,17 @@ nav {
     flex: 0 0 25%;
     margin-bottom: 30px;
     padding: 0 15px;
-
+    visibility: hidden;
+    animation: slip-up 2s ease-in-out 11s forwards;
+}
+.choose-content .choose-item:nth-child(2){
+    animation-delay: 11.2s;
+}
+.choose-content .choose-item:nth-child(3){
+    animation-delay: 11.4s;
+}
+.choose-content .choose-item:nth-child(4){
+    animation-delay: 11.6s;
 }
 
 .choose-icon {
@@ -1156,6 +1211,18 @@ nav {
     margin-bottom: 30px;
     padding: 0 15px;
     text-align: center;
+    visibility: hidden;
+    animation: slip-up 2s ease-in-out 15s forwards;
+}
+
+.team-content .team-item:nth-child(2){
+    animation-delay: 15.2s;
+}
+.team-content .team-item:nth-child(3){
+    animation-delay: 15.4s;
+}
+.team-content .team-item:nth-child(4){
+    animation-delay: 15.6s;
 }
 
 .team-img{
@@ -1234,11 +1301,15 @@ nav {
     flex: 0 0 57%;
     text-align: center;
     padding: 0 15px;
+    visibility: hidden;
+    animation: slip-right 2s ease-in-out 17s forwards;
 }
 
 .download-content {
     flex: 0 0 43%;
     padding: 0 15px;
+    visibility: hidden;
+    animation: slip-left 2s ease-in-out 17s forwards;
 }
 
 .download-content h2 {
@@ -1310,6 +1381,8 @@ nav {
 
 .faq-part {
     padding: 0 15px;
+    visibility: hidden;
+    animation: slip-up 2s ease-in-out 19s forwards;
 }
 
 .faq-item {
@@ -1419,6 +1492,12 @@ nav {
     padding: 0 15px;
     display: flex;
     flex-direction: column;
+    visibility: hidden;
+    animation: slip-right 2s ease-in-out 21s forwards;
+}
+.contact-part.part-top {
+    visibility: hidden;
+    animation: slip-left 2s ease-in-out 21s forwards;
 }
 
 .contact-part h2 {
