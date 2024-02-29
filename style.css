@@ -429,6 +429,9 @@ nav {
     
     display: none;
 }
+.mobile-menu > label i {
+    cursor: pointer;
+}
 
 #open-mobile {
     display: none;
@@ -516,6 +519,9 @@ nav {
     cursor: pointer;
     z-index: 10;
     transition: all 0.9s ease;
+}
+.mobile-top a img {
+    vertical-align: middle;
 }
 
 .nav-mobile {
@@ -1647,11 +1653,14 @@ nav {
     line-height: 1.55;
     padding: 0 40px 45px 55px;
     position: relative;
-    transform: scale(1,0);
     transform-origin: top center; 
     background-color: #fff;
-    display: none;
+    /* display: none; */
+    transition: 1s linear;
+    transform: scaleY(0);
     transition: all 1s linear;
+    display: none;
+    height: 0;
 
 }
 .answer::after {
@@ -1666,7 +1675,10 @@ nav {
 
 .faq-part input:checked ~.answer {
     display: block;
-    transform: scale(1,1);
+    transform: scaleY(1);
+    height: 100%;
+    /* animation: slip-item-down 1s linear forwards; */
+
 }
 
 .faq-part input:checked ~label i {
