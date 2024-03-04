@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
 }
 
+*::selection {
+    background-color: #00C4F4;
+    color: #fff;
+}
 .content-wrapper {
 
     
